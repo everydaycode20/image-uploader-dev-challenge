@@ -1,1 +1,1 @@
-client side
+Client side made with React.
