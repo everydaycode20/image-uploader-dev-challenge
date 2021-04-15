@@ -1,4 +1,4 @@
-# Image Uploader Dev Challenge
+# Image Uploader Dev Challenge (React Express)
 
 ![web app gif](https://res.cloudinary.com/dzsr3ncf1/image/upload/v1618500434/gif_image_upload_v1_r5eoze.gif)
 
