@@ -1,0 +1,85 @@
+.upload-container{
+    background-color: #fff;
+    width: 80vw;
+    height: 150px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .container-status{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        gap: 25px;
+
+        h1{
+            align-self: flex-start;
+            font-size: 1.2rem;
+            color: #4F4F4F;
+        }
+
+        .status-bar{
+            width: 100%;
+            height: 6px;
+            background: #F2F2F2;
+            border-radius: 8px;
+            overflow: hidden;
+
+            .fill{
+                background-color: #2F80ED;
+                width: 30%;
+                border-radius: 8px;
+                height: 6px;
+                animation: progress 1.2s ease-in-out infinite;
+                
+            }
+            
+        }
+    }
+
+}
+
+@keyframes progress {
+    
+    0%{
+        transform: translateX(-50px);
+    }
+
+    100%{
+        transform: translateX(100vw);
+    }
+}
+
+@media only screen and(min-width: 600px) {
+    .upload-container{
+        width: 60vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .upload-container{
+        width: 45vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .upload-container{
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .upload-container{
+        width: 30vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .upload-container{
+        width: 20vw;
+    }
+}

@@ -1,0 +1,40 @@
+[image-contrast=true]{
+    --saturation: 500%;
+}
+
+[image-contrast=false]{
+    --saturation: 100%;
+}
+
+.drop-down-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F6F8FB;
+    border: 1px dashed #97BEF4;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 85%;
+    height: 45%;
+    filter: saturate(var(--saturation));
+
+    img{
+        width: 35%;
+    }
+}
+
+p{
+    font-size: 0.75rem;
+    color: #BDBDBD;
+}
+
+.choose-file{
+    background: #2F80ED;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+    padding: 5px;
+    cursor: pointer;
+}
