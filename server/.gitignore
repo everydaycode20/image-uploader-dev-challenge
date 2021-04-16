@@ -1,0 +1,6 @@
+node_modules/
+index-cd.js
+Procfile
+public/
+.env
+index-cd.js
