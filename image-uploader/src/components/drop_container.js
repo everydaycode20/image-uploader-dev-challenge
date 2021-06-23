@@ -38,7 +38,7 @@ function DropContainer() {
 
         request.onreadystatechange = function(){
             
-            if (this.readyState == 4 && this.status == 200) {
+            if (this.readyState === 4 && this.status === 200) {
                 let response = JSON.parse(this.responseText);
                 
                 if (response) {
@@ -47,7 +47,7 @@ function DropContainer() {
                     setError(null);
                 }
             }
-            else if (this.readyState == 4 && this.status == 400) {
+            else if (this.readyState === 4 && this.status === 400) {
                 let response = JSON.parse(this.responseText);
                 setError(response.message);
                 setStatusUrl(false);

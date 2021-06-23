@@ -52,7 +52,8 @@ app.post("/upload-image", cors(), (req, res, next) => {
                 }
                 else{
                     let pathUrl = req.protocol + '://' + req.get('host')  + "/" + req.file.path;
-                    res.status(200).json({status: true, url: pathUrl});
+                    
+                    res.status(200).json({status: true, url: pathUrl.replace("http", "https")});
                 }
             });
         }
